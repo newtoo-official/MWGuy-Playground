@@ -27,7 +27,7 @@ GtkHeaderBar * magenta_create_title_bar(GtkWindow * window) {
     gtk_container_add(buttonContainer, GTK_WIDGET(resize));
     gtk_container_add(buttonContainer, GTK_WIDGET(close));
 
-    gtk_header_bar_pack_start(headerBar, GTK_WIDGET(buttonContainer));
+    gtk_header_bar_pack_end(headerBar, GTK_WIDGET(buttonContainer));
 
     return headerBar;
 }

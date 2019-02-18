@@ -1,0 +1,3 @@
+/home/pi/Projects/Magenta/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Projects/Magenta/build/CMakeFiles/magenta.dir
+/home/pi/Projects/Magenta/build/CMakeFiles/edit_cache.dir
