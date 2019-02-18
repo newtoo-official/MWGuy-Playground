@@ -2,7 +2,6 @@
 #define MAGENTA_MAGENTA_WINDOW_H
 
 #include <gtk/gtk.h>
-#include <functional>
 #include "main.h"
 #include "magenta_window_title_bar.h"
 

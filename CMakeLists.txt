@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.7)
-project(magenta)
+project(magenta C)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_STANDARD 11)
 
 file(GLOB_RECURSE INCLUDE src/*.h)
-file(GLOB_RECURSE SRC src/*.cpp)
+file(GLOB_RECURSE SRC src/*.c)
 file(GLOB_RECURSE RES res/*.*)
 
 add_executable(magenta ${INCLUDE} ${SRC})
