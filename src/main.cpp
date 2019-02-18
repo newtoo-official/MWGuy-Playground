@@ -15,8 +15,6 @@ int gtk_magenta_main(int argc, char ** argv) {
 }
 
 void load_gtk() {
-    gtk_css_provider_load_from_path(GTK_CSS_PROVIDER(gtk_css_provider_new()), "res/style.css", NULL);
-
     GtkWindow * mainWindow = magenta_create_main_window();
 
     g_signal_connect(G_OBJECT(mainWindow), "destroy", gtk_main_quit, NULL);

@@ -9,6 +9,10 @@ GtkHeaderBar * magenta_create_title_bar(GtkWindow * window) {
     GtkButton * resize = GTK_BUTTON(gtk_button_new_from_icon_name("window-maximize-symbolic", GTK_ICON_SIZE_MENU));
     GtkButton * hide = GTK_BUTTON(gtk_button_new_from_icon_name("window-minimize-symbolic", GTK_ICON_SIZE_MENU));
 
+    gtk_widget_set_name(GTK_WIDGET(close),  "header_buttons");
+    gtk_widget_set_name(GTK_WIDGET(resize), "header_buttons");
+    gtk_widget_set_name(GTK_WIDGET(hide),   "header_buttons");
+
     g_signal_connect(G_OBJECT(close), "clicked", G_CALLBACK(+[](GtkWidget * widget, gpointer data) {
         gtk_window_close(GTK_WINDOW(data));
     }), window);
