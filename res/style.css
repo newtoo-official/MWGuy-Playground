@@ -4,6 +4,10 @@ headerbar {
     background-image: linear-gradient(#e0e0e0, #e0e0e0);
 }
 
+headerbar > label {
+    color: #5c5958;
+}
+
 #header_buttons {
     background-image: linear-gradient(#e0e0e0, #e0e0e0);
     color: #5c5958;
@@ -16,14 +20,6 @@ headerbar {
     background-image: linear-gradient(#cacaca, #cacaca);
     color: #5c5958;
     padding: 5px;
-    border: solid 1px #5c5958;
-    box-shadow: inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25), inset -1px 1px 0px 0px rgba(255, 255, 255, 0.25);
-}
-
-/* Window Body */
-window {
-    border-radius: 20px;
-    box-shadow: inset 1px -1px 0px 0px rgba(255, 255, 255, 0.25), inset -1px -1px 0px 0px rgba(255, 255, 255, 0.25);
-    background-color: #e0e0e0;
-    padding: 5px;
+    border: none;
+    box-shadow: none;
 }
