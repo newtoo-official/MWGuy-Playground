@@ -1,5 +1,7 @@
 #include "magenta_window.h"
 #include "classes/MagentaTabPane.h"
+#include "classes/MagentaTab.h"
+#include "classes/engine/WebkitBrowserEngine.h"
 
 GtkWindow * magenta_create_styled_window() {
     GtkWindow * window = GTK_WINDOW(gtk_window_new(GTK_WINDOW_TOPLEVEL));
@@ -21,9 +23,12 @@ GtkWindow * magenta_create_main_window() {
     gtk_window_set_position(window, GTK_WIN_POS_CENTER);
     gtk_window_set_default_size(window, 1100, 600);
 
-    MagentaTabPane MagentaTabPane(window);
+    MagentaTabPane magentaTabPane(window);
+    GtkNotebook * tabPane = magentaTabPane.gtkNotebookWidget();
+    MagentaTab mainTab(tabPane, const_cast<char *>("http://newtoo.ru/magenta/ru/"));
+    mainTab.open();
 
-    gtk_container_add(GTK_CONTAINER(window), GTK_WIDGET(MagentaTabPane.gtkNotebookWidget()));
+    gtk_container_add(GTK_CONTAINER(window), GTK_WIDGET(tabPane));
 
     return window;
 }

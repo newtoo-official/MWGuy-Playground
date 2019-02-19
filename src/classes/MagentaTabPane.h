@@ -8,7 +8,6 @@ class MagentaTabPane {
 public:
     MagentaTabPane(GtkWindow * window);
     GtkNotebook * gtkNotebookWidget();
-    void test();
 
 private:
     GtkWindow * gtkWindow;
