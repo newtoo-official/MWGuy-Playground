@@ -1,16 +1,16 @@
 headerbar {
-    border-bottom: none;
-    border-radius: 4px 4px 0 0;
-    background-image: linear-gradient(#e0e0e0, #e0e0e0);
+    border: none;
+    border-radius: 7px 7px 0 0;
+    background-image: linear-gradient(#cdcdcd, #bfbfbf);
     box-shadow: none;
 }
 
-headerbar > label {
-    color: #5c5958;
+headerbar * {
+    color: #494949;
 }
 
 #header_buttons {
-    background-image: linear-gradient(#e0e0e0, #e0e0e0);
+    background-image: linear-gradient(transparent, transparent);
     color: #5c5958;
     padding: 5px;
     border: none;
@@ -23,4 +23,17 @@ headerbar > label {
     padding: 5px;
     border: none;
     box-shadow: none;
+}
+
+#tab-add-button {
+    background-image: linear-gradient(transparent, transparent);
+    color: #5c5958;
+    padding: 5px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+tab {
+    padding: 0;
 }

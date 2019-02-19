@@ -1,5 +1,5 @@
 #include "magenta_window.h"
-#include "magenta_tabs.h"
+#include "classes/MagentaTabPane.h"
 
 GtkWindow * magenta_create_styled_window() {
     GtkWindow * window = GTK_WINDOW(gtk_window_new(GTK_WINDOW_TOPLEVEL));
@@ -21,10 +21,9 @@ GtkWindow * magenta_create_main_window() {
     gtk_window_set_position(window, GTK_WIN_POS_CENTER);
     gtk_window_set_default_size(window, 1100, 600);
 
-    int id = magenta_tabs_build_tab_pane();
-    int tab_id = magenta_tab_open_uri(id, "https://github.com/newtoo-official/Magenta");
+    MagentaTabPane MagentaTabPane(window);
 
-    gtk_container_add(GTK_CONTAINER(window), GTK_WIDGET(magenta_get_tab_pane_widget(id)));
+    gtk_container_add(GTK_CONTAINER(window), GTK_WIDGET(MagentaTabPane.gtkNotebookWidget()));
 
     return window;
 }
