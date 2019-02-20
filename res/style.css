@@ -1,8 +1,12 @@
 headerbar {
     border: none;
     border-radius: 7px 7px 0 0;
-    background-image: linear-gradient(#cdcdcd, #bfbfbf);
+    background-image: linear-gradient(#cdcdcd, #cdcdcd);
     box-shadow: none;
+}
+
+window {
+    background-image: linear-gradient(#cdcdcd, #cdcdcd);
 }
 
 headerbar * {
@@ -25,7 +29,7 @@ headerbar * {
     box-shadow: none;
 }
 
-#tab-add-button {
+#tab-remove-button, #tab-add-button {
     background-image: linear-gradient(transparent, transparent);
     color: #5c5958;
     padding: 5px;

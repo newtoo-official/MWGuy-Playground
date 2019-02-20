@@ -9,7 +9,6 @@ class MagentaTab {
 public:
     MagentaTab(GtkNotebook * tabPane, char * uri);
     void open();
-    void close();
 
 private:
     GtkNotebook * gtkTabPane;

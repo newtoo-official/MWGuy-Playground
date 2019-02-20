@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.7)
 project(magenta)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 file(GLOB_RECURSE INCLUDE src/*.h)
 file(GLOB_RECURSE SRC src/*.cc src/*.cpp src/*.c)
